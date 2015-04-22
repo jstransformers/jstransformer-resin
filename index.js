@@ -19,16 +19,3 @@ exports.render = function _render(str, options) {
 
   return resin(options);
 };
-
-/**
- * arrayify value
- *
- * @param  {*} `val`
- * @return {Array}
- * @api private
- */
-function arrayify(val) {
-  return !Array.isArray(val)
-    ? [val]
-    : val;
-}
