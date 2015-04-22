@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-resin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "resin support for JS Transformers. CSS to CSS transformation.",
   "scripts": {
     "test": "node test",
