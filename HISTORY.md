@@ -1,9 +1,13 @@
+# Changelog
 
+## v0.2.0: 2016-06-10
 
-## v0.1.0 / April 22, 2015
-- update tests
-- cleanup
-- implement
+- Update Boilerplate
 
-## v0.0.0 / April 14, 2015
-- first commits
+## v0.1.0: 2015-04-22
+
+- Clean up
+
+## v0.0.1: 2015-04-14
+
+- Initial release
