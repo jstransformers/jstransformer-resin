@@ -6,7 +6,6 @@
 [![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-resin/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-resin)
 [![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-resin/master.svg)](http://david-dm.org/jstransformers/jstransformer-resin)
 [![NPM version](https://img.shields.io/npm/v/jstransformer-resin.svg)](https://www.npmjs.org/package/jstransformer-resin)
-=======
 
 ## Installation
 
