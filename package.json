@@ -1,9 +1,10 @@
 {
   "dependencies": {
+    "extend-shallow": "^2.0.1",
     "topcoat-resin": "^0.5.0"
   },
   "name": "jstransformer-resin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Resin support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -13,7 +14,6 @@
   ],
   "devDependencies": {
     "test-jstransformer": "^1.0.0",
-    "topcoat-button-base": "^0.10.0",
     "xo": "^0.17.1"
   },
   "scripts": {

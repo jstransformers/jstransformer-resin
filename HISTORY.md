@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.0: 2017-01-02
+
+- Added `locals`, which are merged into the `options`
+- Added `.renderFile`
+
 ## v0.2.0: 2016-06-10
 
 - Update Boilerplate
