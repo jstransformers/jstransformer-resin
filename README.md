@@ -1,5 +1,7 @@
 # jstransformer-resin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-resin.svg)](https://greenkeeper.io/)
+
 [Resin](https://github.com/topcoat/resin) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-resin/master.svg)](https://travis-ci.org/jstransformers/jstransformer-resin)
