@@ -1,7 +1,7 @@
 'use strict'
 
-var resin = require('topcoat-resin')
-var extend = require('extend-shallow')
+const resin = require('topcoat-resin')
+const extend = require('extend-shallow')
 
 exports.name = 'resin'
 exports.outputFormat = 'css'
