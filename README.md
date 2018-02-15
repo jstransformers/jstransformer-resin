@@ -15,7 +15,7 @@
 ## API
 
 ```js
-var resin = require('jstransformer')(require('jstransformer-resin'));
+var resin = require('jstransformer')(require('jstransformer-resin'))
 
 var options = {
   browsers: ['last 2 version', 'ios', 'android 4'],
@@ -23,10 +23,10 @@ var options = {
   namespace: 'jstransformer',
   // Add a license to the final output
   license: '// Copyright 2015 and stuff \n'
-};
-var css = ':root { var-grey: #666; } .btn { box-shadow: 0 1px var(grey); }';
+}
+var css = ':root { var-grey: #666; } .btn { box-shadow: 0 1px var(grey); }'
 
-resin.render(css, options);
+resin.render(css, options)
 //=> '// Copyright 2015 and stuff \n.topcoat-btn {\n  box-shadow: 0 1px #666;\n}'
 ```
 
