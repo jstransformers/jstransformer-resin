@@ -1,6 +1,6 @@
 'use strict'
 
-const resin = require('topcoat-resin')
+const resin = require('resin')
 const extend = require('extend-shallow')
 
 exports.name = 'resin'
