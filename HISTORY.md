@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.0: 2018-08-02
+
+- Update to `resin@^1.2.1`
+
 ## v0.3.0: 2017-01-02
 
 - Added `locals`, which are merged into the `options`
