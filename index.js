@@ -6,18 +6,54 @@ const extend = require('extend-shallow')
 exports.name = 'resin'
 exports.outputFormat = 'css'
 
-exports.render = function (str, options, locals) {
-  options = typeof options === 'object' ? options : {}
-  extend(options, locals)
-  options.contents = str
+exports.renderAsync = function (str, options, locals) {
+  return new Promise((resolve, reject) => {
+    options = typeof options === 'object' ? options : {}
+    extend(options, locals)
 
-  return resin(options)
+    // Prepare the variables
+    options.css = str
+    options.vars = options.var !== false
+    options.extend = options.extend !== false
+
+    resin(options).then(result => {
+      // Warn if there are any syntax errors.
+      if (result.messages) {
+        for (const message of result.messages) {
+          console.warn(message.toString())
+        }
+      }
+
+      // Return the result.
+      return resolve(result.css)
+    }).catch(result => {
+      return reject(result)
+    })
+  })
 }
 
-exports.renderFile = function (str, options, locals) {
-  options = typeof options === 'object' ? options : {}
-  extend(options, locals)
-  options.src = str
+exports.renderFileAsync = function (filename, options, locals) {
+  return new Promise((resolve, reject) => {
+    options = typeof options === 'object' ? options : {}
+    extend(options, locals)
 
-  return resin(options)
+    // Prepare the variables
+    options.src = filename
+    options.vars = options.var !== false
+    options.extend = options.extend !== false
+
+    resin(options).then(result => {
+      // Warn if there are any syntax errors.
+      if (result.messages) {
+        for (const message of result.messages) {
+          console.warn(message.toString())
+        }
+      }
+
+      // Return the result.
+      return resolve(result.css)
+    }).catch(result => {
+      return reject(result)
+    })
+  })
 }

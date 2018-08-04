@@ -1,7 +1,7 @@
 :root {
-  var-grey: #666;
+  --grey: #666;
 }
 
 .btn {
-  box-shadow: 0 1px var(grey);
+  box-shadow: 0 1px var(--grey);
 }
