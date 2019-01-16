@@ -26,8 +26,8 @@ exports.renderAsync = function (str, options, locals) {
 
       // Return the result.
       return resolve(result.css)
-    }).catch(result => {
-      return reject(result)
+    }).catch(error => {
+      return reject(error)
     })
   })
 }
@@ -52,8 +52,8 @@ exports.renderFileAsync = function (filename, options, locals) {
 
       // Return the result.
       return resolve(result.css)
-    }).catch(result => {
-      return reject(result)
+    }).catch(error => {
+      return reject(error)
     })
   })
 }
